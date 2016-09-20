@@ -13,7 +13,7 @@ sudo usermod -aG docker <user>
 ```
 git clone git@github.com:felquis/docker-node-try-out.git
 cd docker-node-try-out
-docker build -t any-name-you-want/node-web-app .
+docker build -t docker-node-try-out .
 ```
 
 Checkout out `docker images` this image shoud be listed.
@@ -21,10 +21,9 @@ Checkout out `docker images` this image shoud be listed.
 ### Run Image
 
 ```
-docker run -p 9000:8080 -d any-name-you-want/node-web-app
+docker run -v $(pwd):/app -p 8080:8080 -d docker-node-try-out
 ```
 
 Access http://localhost:9000
 
 Check other commands in the [original article](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-
