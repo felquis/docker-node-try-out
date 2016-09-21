@@ -24,7 +24,7 @@ Checkout out `docker images` this image shoud be listed.
 ### Run Image
 
 ```
-docker run -v $(pwd):/app -p 8080:8080 -d docker-node-try-out
+docker run -v $(pwd):/app -e PORT=8080 -p 8080:8080 -d docker-node-try-out
 ```
 
 Access http://localhost:9000

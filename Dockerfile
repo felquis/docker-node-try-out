@@ -10,6 +10,5 @@ COPY . /app
 
 VOLUME /app/node_modules
 
-EXPOSE 8080
-
 CMD ["npm", "start"]
+
