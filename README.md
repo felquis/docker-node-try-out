@@ -4,10 +4,13 @@ Example from https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
 ## Install Docker
 > Tested on Ubuntu 16.04
+
 ```
 wget -qO- https://get.docker.com/ | sh
 sudo usermod -aG docker <user>
 ```
+
+If you dont have `wget` you can use `curl -sSL https://get.docker.com/ | sh`
 
 ## Usage
 ```
